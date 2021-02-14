@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #E5E5F7;
+  opacity: 1;
+  background-image: radial-gradient(#444CF7 0.7px, transparent 1px), radial-gradient(#444CF7 1px, #E5E5F7 1px);
+  background-size: 40px 40px;
+  background-position: 0 0,14px 14px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  padding: 100px 0;
+  margin: 0 auto;
+}
+
+.hero {
+  height: 100vh;
+  min-height: 500px;
+  position: relative;
+  padding: 0;
+}
+
+.hero__container {
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+  -ms-grid-columns: 3fr 2fr;
+      grid-template-columns: 3fr 2fr;
+  place-items: center;
+  gap: 20px;
+}
+
+.hero__title {
+  font-size: 4rem;
+}
+
+.hero__copy {
+  font-size: 1.2rem;
+  margin: 25px 0;
+}
+
+.hero__cta {
+  display: inline-block;
+  background-color: #444CF7;
+  color: #fff;
+  padding: 20px 35px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.hero__img {
+  width: 95%;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 18em;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #fff;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0);
+          clip-path: polygon(0 100%, 100% 100%, 100% 0);
+}
+
+.main {
+  background-color: #fff;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: left;
+  color: #000;
+}
+
+.title--border::after {
+  content: "";
+  display: block;
+  width: 100px;
+  margin-top: 20px;
+  height: 4px;
+  background-color: #444CF7;
+}
+
+/* Instructor*/
+.instructor {
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+  padding: 20px 0 60px;
+}
+
+.instructor__container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.instructor__name {
+  margin: 20px 0;
+}
+
+.instructor__tag {
+  font-weight: 700;
+  color: #444CF7;
+  margin-bottom: 20px;
+}
+
+.instructor__paragraph {
+  text-align: left;
+  line-height: 1.5;
+  font-style: italic;
+  color: #615a5a;
+}
+
+.instructor__img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+/*# sourceMappingURL=style.css.map */
